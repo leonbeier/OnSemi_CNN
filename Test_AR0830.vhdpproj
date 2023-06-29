@@ -1,0 +1,55 @@
+﻿<Project>
+  <ItemGroup>
+    <File Include="Libraries/CNN/CNN_Column_Buffer.vhdp" />
+    <File Include="Libraries/CNN/CNN_Convolution.vhdp" />
+    <File Include="Libraries/CNN/CNN_Convolution_Parallel.vhdp" />
+    <File Include="Libraries/CNN/CNN_Normalization.vhdp" />
+    <File Include="Libraries/CNN/CNN_Pooling.vhdp" />
+    <File Include="Libraries/CNN/CNN_Pooling_Parallel.vhdp" />
+    <File Include="Libraries/CNN/CNN_Row_Buffer.vhdp" />
+    <File Include="Libraries/CNN/CNN_Row_Buffer_Parallel.vhdp" />
+    <File Include="Libraries/CNN/CNN_Row_Expander.vhdp" />
+    <File Include="Libraries/CNN/NN_Layer.vhdp" />
+    <File Include="Libraries/CNN/NN_Layer_Parallel.vhdp" />
+    <File Include="Libraries/CSI_Camera/ISSP/ISSP.qsys" />
+    <File Include="Libraries/CSI_Camera/ISSP/ISSP.qsys.vhdp" />
+    <File Include="Libraries/CSI_Camera/ALTDDIO_IN.qsys.vhdp" />
+    <File Include="Libraries/CSI_Camera/ALTSYNCRAM.qsys.vhdp" />
+    <File Include="Libraries/CSI_Camera/AR0830_Camera.vhdp" />
+    <File Include="Libraries/CSI_Camera/AR0830_Camera_Config_Test.vhdp" />
+    <File Include="Libraries/CSI_Camera/I2C.vhdp" />
+    <File Include="Libraries/Filters/Color_Correction.vhdp" />
+    <File Include="Libraries/Filters/Gaussian_Filter.vhdp" />
+    <File Include="Libraries/Filters/MAX_Invert.vhdp" />
+    <File Include="Libraries/Filters/MAX_Pooling.vhdp" />
+    <File Include="Libraries/Filters/MAX_Pooling_Sim.ghdp" />
+    <File Include="Libraries/Filters/RGB_TO_CNN.vhdp" />
+    <File Include="Libraries/HDMI/SDRAM_HDMI/Camera_Capture_SDRAM.vhdp" />
+    <File Include="Libraries/HDMI/SDRAM_HDMI/SDRAM_Controller.qsys" />
+    <File Include="Libraries/HDMI/SDRAM_HDMI/SDRAM_PLL.vhd" />
+    <File Include="Libraries/HDMI/SDRAM_HDMI/SDRAM_PLL_0002.qip" />
+    <File Include="Libraries/HDMI/SDRAM_HDMI/SDRAM_PLL_0002.v" />
+    <File Include="Libraries/HDMI/SDRAM_HDMI/VS_SDRAM_Interface.vhdp" />
+    <File Include="Libraries/HDMI/DVI_OUT.v" />
+    <File Include="Libraries/HDMI/HDMI_Out.vhdp" />
+    <File Include="Libraries/HDMI/TMDS_ENCODE.v" />
+    <File Include="Libraries/UART/BinaryToBcd.vhdp" />
+    <File Include="Libraries/UART/BinaryToBcdDigit.vhdp" />
+    <File Include="Libraries/UART/Single-Port_RAM.vhdp" />
+    <File Include="Libraries/UART/Single-Port_ROM.vhdp" />
+    <File Include="Libraries/UART/String_Type.vhdp" />
+    <File Include="Libraries/UART/UART.vhdp" />
+    <File Include="Libraries/UART/UART_Array.vhdp" />
+    <File Include="Libraries/CNN_Config.vhdp" />
+    <File Include="Libraries/Data_Package.vhdp" />
+    <File Include="Libraries/OnSemi_Image_Data_USB.vhdp" />
+    <File Include="Libraries/Test_Image_Package.vhdp" />
+    <File Include="CAM_HDMI_Out.vhdp" />
+    <File Include="CNN.vhdp" />
+    <File Include="Test_AR0830.vhdp" />
+  </ItemGroup>
+  <PropertyGroup>
+    <SelectedFpga>5CEBA2U15C8</SelectedFpga>
+    <IoVoltage>3.3V</IoVoltage>
+  </PropertyGroup>
+</Project>

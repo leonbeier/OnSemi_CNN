@@ -1,0 +1,154 @@
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CEBA2U15C8
+set_global_assignment -name TOP_LEVEL_ENTITY Test_AR0830
+set_global_assignment -name NUM_PARALLEL_PROCESSORS 8
+set_global_assignment -name INTERNAL_FLASH_UPDATE_MODE "SINGLE IMAGE"
+set_global_assignment -name VHDL_FILE Generated/AR0430_Camera.vhd
+set_global_assignment -name VHDL_FILE Generated/AR0830_Cam_Config_Test.vhd
+set_global_assignment -name VHDL_FILE Generated/AR0830_Camera.vhd
+set_global_assignment -name VHDL_FILE Generated/BinaryToBcd.vhd
+set_global_assignment -name VHDL_FILE Generated/BinaryToBcdDigit.vhd
+set_global_assignment -name VHDL_FILE Generated/CAM_HDMI_Out.vhd
+set_global_assignment -name VHDL_FILE Generated/CNN.vhd
+set_global_assignment -name VHDL_FILE Generated/CNN_Column_Buffer.vhd
+set_global_assignment -name VHDL_FILE Generated/CNN_Config_Package.vhd
+set_global_assignment -name VHDL_FILE Generated/CNN_Convolution.vhd
+set_global_assignment -name VHDL_FILE Generated/CNN_Convolution_Parallel.vhd
+set_global_assignment -name VHDL_FILE Generated/CNN_Line_Data_Package.vhd
+set_global_assignment -name VHDL_FILE Generated/CNN_Normalization.vhd
+set_global_assignment -name VHDL_FILE Generated/CNN_Pooling.vhd
+set_global_assignment -name VHDL_FILE Generated/CNN_Pooling_Parallel.vhd
+set_global_assignment -name VHDL_FILE Generated/CNN_Row_Buffer.vhd
+set_global_assignment -name VHDL_FILE Generated/CNN_Row_Buffer_Parallel.vhd
+set_global_assignment -name VHDL_FILE Generated/CNN_Row_Expander.vhd
+set_global_assignment -name VHDL_FILE Generated/Camera_Capture_SDRAM.vhd
+set_global_assignment -name VHDL_FILE Generated/Color_Correction_Filter.vhd
+set_global_assignment -name VHDL_FILE Generated/Gaussian_Filter.vhd
+set_global_assignment -name VHDL_FILE Generated/HDMI_Out.vhd
+set_global_assignment -name VHDL_FILE Generated/I2C_Master_Interface.vhd
+set_global_assignment -name VHDL_FILE Generated/Image_Data_Package.vhd
+set_global_assignment -name VHDL_FILE Generated/MAX_Invert_Filter.vhd
+set_global_assignment -name VHDL_FILE Generated/MAX_Pooling.vhd
+set_global_assignment -name VHDL_FILE Generated/NN_Layer.vhd
+set_global_assignment -name VHDL_FILE Generated/NN_Layer_Parallel.vhd
+set_global_assignment -name VHDL_FILE Generated/OnSemi_Cam_Config.vhd
+set_global_assignment -name VHDL_FILE Generated/RGB_TO_CNN.vhd
+set_global_assignment -name VHDL_FILE Generated/Single_Port_RAM.vhd
+set_global_assignment -name VHDL_FILE Generated/Single_Port_ROM.vhd
+set_global_assignment -name VHDL_FILE Generated/String_Type_Package.vhd
+set_global_assignment -name VHDL_FILE Generated/Test_AR0830.vhd
+set_global_assignment -name VHDL_FILE Generated/Test_Image_Package.vhd
+set_global_assignment -name VHDL_FILE Generated/UART_Array.vhd
+set_global_assignment -name VHDL_FILE Generated/UART_Interface.vhd
+set_global_assignment -name VHDL_FILE Generated/VS_SDRAM_Interface.vhd
+set_global_assignment -name QSYS_FILE Libraries/CSI_Camera/ISSP/ISSP.qsys
+set_global_assignment -name QSYS_FILE Libraries/HDMI/SDRAM_HDMI/SDRAM_Controller.qsys
+set_global_assignment -name QIP_FILE Libraries/HDMI/SDRAM_HDMI/SDRAM_HDMI.qip
+set_global_assignment -name VHDL_FILE Libraries/HDMI/SDRAM_HDMI/SDRAM_HDMI.vhd
+set_global_assignment -name VHDL_FILE Libraries/HDMI/SDRAM_HDMI/SDRAM_PLL.vhd
+set_global_assignment -name QIP_FILE Libraries/HDMI/SDRAM_HDMI/SDRAM_PLL_0002.qip
+set_global_assignment -name VERILOG_FILE Libraries/HDMI/SDRAM_HDMI/SDRAM_PLL_0002.v
+set_global_assignment -name QIP_FILE Libraries/HDMI/SDRAM_HDMI/VS_SDRAM_PLL.qip
+set_global_assignment -name VHDL_FILE Libraries/HDMI/SDRAM_HDMI/VS_SDRAM_PLL.vhd
+set_global_assignment -name VERILOG_FILE Libraries/HDMI/DVI_OUT.v
+set_global_assignment -name VERILOG_FILE Libraries/HDMI/TMDS_ENCODE.v
+set_location_assignment PIN_R13 -to Capture_sdram_addr[0]
+set_location_assignment PIN_M13 -to Capture_sdram_addr[10]
+set_location_assignment PIN_P15 -to Capture_sdram_addr[11]
+set_location_assignment PIN_U12 -to Capture_sdram_addr[1]
+set_location_assignment PIN_V12 -to Capture_sdram_addr[2]
+set_location_assignment PIN_V13 -to Capture_sdram_addr[3]
+set_location_assignment PIN_V15 -to Capture_sdram_addr[4]
+set_location_assignment PIN_V16 -to Capture_sdram_addr[5]
+set_location_assignment PIN_T16 -to Capture_sdram_addr[6]
+set_location_assignment PIN_U15 -to Capture_sdram_addr[7]
+set_location_assignment PIN_P14 -to Capture_sdram_addr[8]
+set_location_assignment PIN_T15 -to Capture_sdram_addr[9]
+set_location_assignment PIN_T12 -to Capture_sdram_ba[0]
+set_location_assignment PIN_N13 -to Capture_sdram_ba[1]
+set_location_assignment PIN_M14 -to Capture_sdram_cas_n
+set_location_assignment PIN_U4 -to Capture_sdram_dq[0]
+set_location_assignment PIN_T11 -to Capture_sdram_dq[10]
+set_location_assignment PIN_R9 -to Capture_sdram_dq[11]
+set_location_assignment PIN_R11 -to Capture_sdram_dq[12]
+set_location_assignment PIN_T9 -to Capture_sdram_dq[13]
+set_location_assignment PIN_V10 -to Capture_sdram_dq[14]
+set_location_assignment PIN_U9 -to Capture_sdram_dq[15]
+set_location_assignment PIN_T4 -to Capture_sdram_dq[1]
+set_location_assignment PIN_V6 -to Capture_sdram_dq[2]
+set_location_assignment PIN_U5 -to Capture_sdram_dq[3]
+set_location_assignment PIN_V7 -to Capture_sdram_dq[4]
+set_location_assignment PIN_T5 -to Capture_sdram_dq[5]
+set_location_assignment PIN_V8 -to Capture_sdram_dq[6]
+set_location_assignment PIN_U8 -to Capture_sdram_dq[7]
+set_location_assignment PIN_P10 -to Capture_sdram_dq[8]
+set_location_assignment PIN_P9 -to Capture_sdram_dq[9]
+set_location_assignment PIN_U13 -to Capture_sdram_dqm[0]
+set_location_assignment PIN_U14 -to Capture_sdram_dqm[1]
+set_location_assignment PIN_P13 -to Capture_sdram_ras_n
+set_location_assignment PIN_F14 -to CLK
+set_location_assignment PIN_C13 -to Camera_CLK_Lane
+set_location_assignment PIN_C12 -to Camera_CLK_Lane(n)
+set_instance_assignment -name IO_STANDARD LVDS -to Camera_CLK_Lane
+set_location_assignment PIN_E8 -to Camera_Data_Lane[0]
+set_location_assignment PIN_F7 -to Camera_Data_Lane[0](n)
+set_instance_assignment -name IO_STANDARD LVDS -to Camera_Data_Lane[0]
+set_location_assignment PIN_G6 -to Camera_Data_Lane[1]
+set_location_assignment PIN_F6 -to Camera_Data_Lane[1](n)
+set_instance_assignment -name IO_STANDARD LVDS -to Camera_Data_Lane[1]
+set_location_assignment PIN_B7 -to Camera_Data_Lane[2]
+set_location_assignment PIN_B8 -to Camera_Data_Lane[2](n)
+set_instance_assignment -name IO_STANDARD LVDS -to Camera_Data_Lane[2]
+set_location_assignment PIN_B4 -to Camera_Data_Lane[3]
+set_location_assignment PIN_B5 -to Camera_Data_Lane[3](n)
+set_instance_assignment -name IO_STANDARD LVDS -to Camera_Data_Lane[3]
+set_location_assignment PIN_B17 -to Camera_SCL
+set_location_assignment PIN_B18 -to Camera_SDA
+set_location_assignment PIN_F10 -to Camera_Enable
+set_location_assignment PIN_B15 -to Camera_Cam_Reset
+set_location_assignment PIN_P16 -to Capture_sdram_clk
+set_location_assignment PIN_N12 -to Capture_sdram_we_n
+set_location_assignment PIN_A7 -to HDMI_CLK
+set_location_assignment PIN_A6 -to HDMI_CLK(n)
+set_instance_assignment -name IO_STANDARD LVDS -to HDMI_CLK
+set_location_assignment PIN_A11 -to HDMI_DATA[0]
+set_location_assignment PIN_A10 -to HDMI_DATA[0](n)
+set_instance_assignment -name IO_STANDARD LVDS -to HDMI_DATA[0]
+set_location_assignment PIN_A14 -to HDMI_DATA[1]
+set_location_assignment PIN_A15 -to HDMI_DATA[1](n)
+set_instance_assignment -name IO_STANDARD LVDS -to HDMI_DATA[1]
+set_location_assignment PIN_A16 -to HDMI_DATA[2]
+set_location_assignment PIN_A17 -to HDMI_DATA[2](n)
+set_instance_assignment -name IO_STANDARD LVDS -to HDMI_DATA[2]
+set_location_assignment PIN_F9 -to HDMI_HPD
+set_location_assignment PIN_F16 -to TX
+set_location_assignment PIN_T14 -to Capture_sdram_cke
+set_location_assignment PIN_L13 -to Capture_sdram_cs_n
+set_location_assignment PIN_F4 -to debug[0]
+set_location_assignment PIN_J3 -to debug[1]
+set_location_assignment PIN_E3 -to debug[2]
+set_location_assignment PIN_E2 -to debug[3]
+set_location_assignment PIN_B14 -to debug[4]
+set_location_assignment PIN_D16 -to debug[5]
+set_location_assignment PIN_H18 -to debug[6]
+set_location_assignment PIN_F17 -to debug[7]
+set_location_assignment PIN_E18 -to RX
